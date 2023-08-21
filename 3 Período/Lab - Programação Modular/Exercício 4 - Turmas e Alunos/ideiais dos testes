@@ -1,0 +1,33 @@
+Turma:
+ 
+	- Turma criada? OK
+	- Turma pode conter até 20 alunos? OK
+	- turmas tem níveis? OK
+	- Código das turmas é feito corretamente? OK
+	- Aulas criado na turma?
+	- Turma resetada quando atingir limite de aulas? (20 aulas)
+	- Aluno pode ser aprovado?
+	- Aluno pode ser reprovado? 
+	- Gera relatórios dos alunos? (Nome, nota, estado de aprovação) em ordem alfabética
+	- Gera relatório com média das notas e freqência da turma?
+	- Gera relatório com a definição do melhor aluno? (combinação da nota, com peso de 80%, e da freqência, com peso de 20%)
+
+Alunos:
+ 
+	- Aluno criado? OK
+	- Aluno tem as provas atribuidas? OK
+	- As 4 provas tem o mesmo valor? OK
+	- A soma do valor das atividades é 100? OK
+	- Aluno tem somátorio das notas? OK
+	- Quantas faltas o aluno tem? OK
+	- Aluno matriculado em alguma turma?
+	- Aluno matriculado em apenas uma turma?
+
+Atividades:
+
+	- Atividade criada? OK
+	- Valor da atividade configurado? OK
+	- Nota Configurada? Ok
+	
+	
+	aluno.prova_1 = turma.prova_1.atribuir_valor(20)

@@ -1,0 +1,22 @@
+Pré requisitos:
+	
+	Usuário deve entrar na plataforma.
+	O sistema deve ter produtos previamente cadastrados.
+
+Fluxo principal(Pesquisar produtos) 
+	
+	,1) Usuário deve acessar a página inicial do site.
+	2) O sistema deve retornar uma listagem dos produtos cadastrados na platafroma.
+	3) O usuário pode vizualizar informações sobre o produto.
+	
+Fluxo alternativo(1) - Erro ao retornar listagem de produtos 
+
+	2.1) O sistema retorna um erro pois não conseguiu listar produtos por causa de instabilidades no sistema.
+	2.2) O sistema informa ao usuário o erro ocorrido.
+	2.3) O sistema recarrega a página e tenta relistar os produtos.
+	
+Fluxo alternativo(2) - Erro ao exibir produtos
+
+	3.1) O usuário não consegue visualizar corretamente um produto por haver inconsistencias.
+	3.2) O usuário recarrega a página.
+	3.3) O sistema lista novamente os produtos e tenta exibi-los na tela. 

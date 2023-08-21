@@ -1,0 +1,65 @@
+Pré requisito:
+
+	O usuário deve ter uma conta já cadastrada na aplicação.
+	
+Fluxo principal: 
+
+	1) O usuário acessa o menu e seleciona a opção comprar ingressos.
+	2) O usuário escolhe qual modalidade e evento ele gostaria de ir.
+	3) O sistema disponibiliza as datas do evento.
+	4) O usuário escolhe a data e o ingresso.
+	5) O sistema verifica a disponibilidade do ingresso para a data.
+	6) O usuário realiza o pagamento pelos ingressos.
+	7) O sistema confirma a venda.
+	8) O sistema disponibiliza o ingresso para o usuário.
+
+Fluxo alternativo(1) - Erro ao carregar as datas dos eventos esportivos
+
+	3.1) O sistema não consegue listar os eventos esportivos por causa de instabilidades.
+	3.2) O sistema retorna uma mensagem de erro ao usuário.
+	3.3) O sistema recarrega a página e tenta novamente realizar a listagem de eventos.
+	3.4) O usuário escolhe a data e o ingresso.
+	3.5) O sistema verifica a disponibilidade do ingresso para a data.
+	3.6) O usuário realiza o pagamento pelos ingressos.
+	3.7) O sistema confirma a venda.
+	3.8) O sistema disponibiliza o ingresso para o usuário.
+	
+Fluxo alternativo(2) - Erro ao validar a data escolhida pelo usuário
+
+	5.1) O sistema retorna um erro pois a data escolhida pelo usuário não está mais disponível.
+	5.2) O sistema redireciona o usuário para a página de escolha de datas e ingressos.
+	5.3) O sistema avisa ao usuário da indisponibilidade do ingresso naquela data.
+	5.4) O sistema pede ao usuário para selecionar uma nova data e ingresso.
+	5.5) O sistema verifica a disponibilidade do ingresso para a data.
+	5.6) O usuário realiza o pagamento pelos ingressos.
+	5.7) O sistema confirma a venda.
+	5.8) O sistema disponibiliza o ingresso para o usuário.
+	
+Pré requisito:
+
+	O usuário deve ter uma forma de pagamento atrelada ao seu perfil
+	
+Fluxo alternativo(3) - Erro na concretização do pagamento
+	
+	6.1) O sistema retorna uma mensagem de erro após o serviço de pagamento não conseguir concluir a transação.
+	6.2) O sistema pede ao usuário para tentar novamente ou cadastrar um novo método de pagamento.
+	6.3) O usuário realiza o pagamento pelos ingressos.
+	6.4) O sistema confirma a venda.
+	6.5) O sistema disponibiliza o ingresso para o usuário.
+	
+Fluxo alternativo(4) - Erro no sistema ao confirmar a venda dos ingressos
+
+	7.1) O sistema retorna uma mensagem de erro ao não conseguir confirmar a venda do ingresso
+	7.2) O sistema verifica se o pagamento foi realizado com sucesso.
+	7.3) O sistema tenta novamente realizar a confirmação da venda.
+	7.4) O sistema disponibiliza o ingresso para o usuário.
+	
+Fluxo alternativo(5) - Erro no sistema ao disponibilizar os ingressos para o usuário
+
+	8.1) O sistema retorna uma mensagem de erro por não cosneguir disponibilizar os ingressos.
+	8.2) O sistema verifica o status da venda dos ingressos.
+	8.3) O sistema recarrega a página.
+	8.4) O sistema disponibiliza o ingresso para o usuário.
+	
+
+	

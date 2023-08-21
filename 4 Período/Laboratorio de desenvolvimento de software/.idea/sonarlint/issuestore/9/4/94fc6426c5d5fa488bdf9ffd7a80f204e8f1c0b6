@@ -1,0 +1,18 @@
+
+o
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ö¯ÌŸ
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(²Ò€ÿÿÿÿÿ
+f	java:S117O"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(şÜ¡È
+2
+java:S1643I"Use a StringBuilder instead.(Ù‹Ğ¹
+ğ
+java:S1598"ÙThis file "Secretaria.java" should be located in "app" directory, not in "/Users/lucas/Desktop/Faculdade/4 PerÃ­odo/Laboratorio de desenvolvimento de software/Lab-Desenvolvimento-Software/Projeto - 1/ImplementaÃ§Ã£o".(€Ü¯ã
+^
+java:S2259Z"CA "NullPointerException" could be thrown; "curso" is nullable here.(Å™–¹ùÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ïù¯¯ûÿÿÿÿ
+7
+java:S1116"Remove this empty statement.(²Ò€ÿÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ïù¯¯ûÿÿÿÿ
+P
+java:S1854V"5Remove this useless assignment to local variable "c".(şÇõ±şÿÿÿÿ

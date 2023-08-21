@@ -1,0 +1,35 @@
+1) 
+	- Classe criada?
+	- Temporizador criado? OK
+	- Temporizador Iniciado? OK
+
+2) 
+	- Pode ser inciado? OK
+		- paused = false
+	- pode religar após pausa.	
+	- Pode ser reiniciado? ok 
+		-paused == true
+		- tempo == 0,0
+	- Está deligado ok 
+		- tempo 0,0
+		- paused = true 
+	- Está ligado quando tempo chega em 0? ok 
+
+3) 
+	- Pode ligar com tempo zerado?
+	- Pode ser ligado quando porta aberta? ok
+		-porta == fechada
+		- tempo > 0
+	- Pode abrir porta quando tiver ligado? ok 
+	
+4) 
+	- Pode adicionar segundos? ok
+	- Pode adicionar minutos? ok 
+	- Pode adicionar segundos negativo? ok 
+	- Pode adicionar minutos negativo? ok 
+	- Tempo inserido é formatado? ok 
+	- Pode alterar tempo quando está ligado?
+	- Tempo está passando ? ok 
+	- Pode adicionar tempo quando estiver pausado?
+	- Pode passar tempo com timer zerado? ok 
+	

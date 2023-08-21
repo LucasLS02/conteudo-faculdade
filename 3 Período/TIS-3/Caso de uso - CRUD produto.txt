@@ -1,0 +1,116 @@
+Pré requisitos: 
+	Logado no sistema como usuário gerente
+
+Fluxo principal(Cadastro de Produto):
+	
+	1) O usuário acessa o menu e seleciona a opção de cadastro de novo produto.
+	2) O usuário preenche os campos da tela de cadastro com os dados do produto.
+	3) O sistema valida os dados inseridos nos campos do cadastro.
+	4) O sistema finaliza o cadastro.
+		
+Fluxo alternativo(2) - Erro na inserção dos dados na tela
+	
+	2.1) Sistema invalida os dados por não conseguir processar os dados e envia-los para o sistema.
+	2.2) Sistema retorna uma mensagem de erro ao usuário.
+	2.3) Sistema pede ao usuário para realizar novamente a inserção dos dados.
+	2.4) O sistema valida os dados inseridos nos campos do cadastro.
+	2.5) O sistema finaliza o cadastro.
+
+Fluxo alternativo(3) - Erro na validação dos campos inseridos
+
+	3.1) O sistema invalida os dados inseridos pelo usuário e enviados para o sistema pela tela de cadastro.
+	3.2) O sistema retorna um erro na tela de cadastro indicando os campos que inválidos de acordo com as regras de negócio. 
+	3.3) O sistema valida os dados reinseridos nos campos do cadastro.
+	3.4) O sistema finaliza o cadastro.
+	
+Fluxo alternativo(4) - Erro na finalização do cadastro
+
+	4.1) Sistema não consegue finalizar o cadastro por instabilidades do sistema.
+	4.2) O sistema notitica o usuário que houve um erro inesperado durante a finalização do cadastro.
+	4.3) O sistema tenta novamente finalizar o cadastro.
+	
+Pré Condição:
+
+	Logado no sistema como usuário gerente
+
+Fluxo alternativo(1) - Edição
+
+	1.1) O usuário acessa a sua conta no site. 
+	1.2) O usuário deve acessar a página de edição de dados de produto.
+	1.3) O usuário deve escolher qual produto os dados serão atualizados. 
+	1.4) O usuário deve atualizar os dados que ele gostaria de alterar no cadastro do produto.
+	1.5) O sistema irá validar os dados inseridos pelo usuário na tela de edição.
+	1.6) O sistema irá subscrever os dados do produto.
+	1.7) O sistema irá recarregar a página apresentando os dados atualizados do produto.
+
+Fluxo alternativo(1.4) - Erro na inserção dos dados na tela de edição
+	
+	1.4.1) Sistema invalida os dados por não conseguir processar os dados e envia-los para o sistema.
+	1.4.2) Sistema retorna uma mensagem de erro ao usuário.
+	1.4.3) Sistema pede ao usuário para realizar novamente a inserção dos dados.
+	1.4.4) O sistema valida os dados inseridos nos campos de edição dos dados do produto.
+	1.4.5) O sistema finaliza a edição dos dados do produto.
+	1.4.6) O sistema irá subscrever os dados do produto.
+	1.4.7) O sistema irá recarregar a página apresentando os dados atualizados do produto.
+	
+Fluxo alternativo(1.5) Erro na validação dos campos inseridos na tela de edição
+
+	1.5.1) O sistema invalida os dados inseridos pelo usuário e enviados para o sistema pela tela de edição.
+	1.5.2) O sistema retorna um erro na tela de edição indicando os campos inválidos de acordo com as regras de negócio. 
+	1.5.3) O sistema valida os dados reinseridos.
+	1.5.4) O sistema finaliza a edição dos dados do produto.
+	1.5.5) O sistema irá subscrever os dados do produto.
+	1.5.6) O sistema irá recarregar a página apresentando os dados atualizados do produto.
+	
+Fluxo alternativo(1.6) - Erro na finalização da edição dos produtos
+
+	1.6.1) Sistema não consegue finalizar a edição por instabilidades do sistema.
+	1.6.2) O sistema notifica o usuário que houve um erro inesperado durante a finalização da edição.
+	1.6.3) O sistema tenta novamente finalizar a edição.
+	
+Pré Condição:
+
+	Logado no sistema como usuário gerente
+	
+Fluxo alternativo(1) - Listagem de dados do produtos
+	
+	1.1) O usuário entra na página de países participantes.
+	1.2) O sistema deve retornar uma listagem com todos os produto.
+	
+Fluxo alternativo(1.2) - Erro ao retornar a listagem dos produtos
+
+	1.2.1) O sistema não consegue retornar a lista dos produto cadastrados.
+	1.2.2) O sistema retorna uma mensagem de erro para o usuário.
+	1.2.3) O sistema tentar recarregar a página para listar os produto cadastrados.
+	
+Pré Condição:
+
+	O usuário deve estar logado no sistema com permissão de usuário CON 
+	O usuário deve ter pelo menos 1 produto cadastrado.
+	
+Fluxo alternativo(1.2) - Deleção de produtos cadastrados na plataforma
+
+	1.2.1) O usuaŕio pede para que os dados de um produto sejam deletados.
+	1.2.2) O sistema deleta os dados da aplicação.
+	1.2.3) O sistema retorna uma mensagem ao usuário avisando sobre o sucesso ao deletar um produto cadastrado.
+	1.2.4) o sistema recarrega a página atualizando a listagem dos produto cadastrados.
+	
+Fluxo alternativo(1.2.1) - Erro ao requisitar a deleção de produtos cadastrados na plataforma
+	
+	1.2.1.1) O sistema não consegue receber o pedido de deleção por instabilidade do servidor.
+	1.2.1.2) O sistema manda novamente o pedido para que o produto seja deletado.
+	1.2.1.3) O sistema retorna uma mensagem ao usuário avisando sobre o sucesso ao deletar um produto cadastrado.
+	1.2.1.4) o sistema recarrega a página atualizando a listagem dos produtos cadastrados.
+	
+Fluxo alternativo(1.2.2) - Erro do sistema ao deletar produtos cadastrados na plataforma
+
+	1.2.2.1) o sistema não conseguiu deletar o cadastro de um produto na plataforma.
+	1.2.2.2) O sistema retorna uma mensagem ao usuário avisando que houve um erro inesperado na tentativa de deletar o registro de um produto.
+	
+Fluxo alternativo(1.2.4) - Erro ao relistar as listas de produtos cadastrados
+
+	1.2.4.1) O sistema não consegue retornar a lista dos produto cadastrados após a deleção de um registro.
+	1.2.4.2) O sistema retorna uma mensagem de erro para o usuário.
+	1.2.4.3) O sistema tentar recarregar a página para listar os produtos cadastrados após a deleção de um registro.
+	 
+	

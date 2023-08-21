@@ -1,0 +1,43 @@
+-Empresa Empacotadora-
+Público alvo: lojas, supermercados e distribuidoras
+Horário de trabalho: 8h00 às 17h00
+Horário de saída da primeira entrega: 12h00
+
+Mudança: automatização do processo
+Como: utilizando esteira e braços mecânicos
+Funcionamento do equipamento: esterira recebe o lote de produtos, o braço mecânico os empacota e em seguida insere dentro de uma caixa, que depois é levada ao transporte.
+
+
+• Questão: como obter o melhor rendimento?
+Há uma grande quantidade de pedidos de empacotamento e tanto a esteira como o braço mecânico precisam ser programados.
+
+
+Situação:
+ - No momento, só será empacotado um único tipo de produto (cenário que pode ser alterado);
+ - Cada unidade deste produto tem seu volume medido em 250 cm³;
+ - A esteira pode produzir pacotes de até 5000 cm³ por vez;
+ - A produção de um pacote toma um tempo fixo de 5 segundos;
+ - A transição entre a saída da esteira e o rolamento dos novos produtos leva um tempo fixo de 0,5 segundos (acontecem simultaneamente: enquanto um pacote é removido, a esteira
+rola uma nova quantidade de produtos para a frente).
+
+
+Objetivo:
+ - minimizar o tempo médio gasto para atender cada pedido;
+ - maximizar a quantidade de pedidos produzidos antes de meio dia, quando sai a primeira van para entrega;
+ - atender a prazos estritos de clientes prioritários, que pagam a mais por isso;
+ - vericar se vale a pena comprar uma segunda esteira para ajudar no empacotamento.
+
+• Realizar simulações computacionais de como se daria o empacotamento de uma quantidade de pedidos
+pré-determinados, criados a partir da demanda esperada da empresa para um dia típico de trabalho.
+  Faça todos os testes que desejar para dar as respostas acima ao proprietário da empacotadeira (Considerando que é inviável testar várias congurações da esteira ao longo de poucos dias).
+
+
+• Os dados da simulação serão lidos a partir de um arquivo texto com a seguinte estrutura:
+
+	95                                     #número total de pedidos. Um pedido pode gerar mais de um pacote
+	James Sandero;13;15       #cliente; total de produtos do pedido; prazo para empacotamento(min)
+	Jean Green;72;0               #prazo 0 significa que não há prazo.
+	Hank McCurtis;37;22
+	Scott Winters;29;0
+	James Sandero;22;25       #um cliente pode ter mais de um pedido
+	(...)

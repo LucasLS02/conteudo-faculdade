@@ -1,0 +1,16 @@
+Pré requisitos:
+	
+	Usuário deve entrar na plataforma.
+	O sistema deve ter produtos previamente cadastrados.
+
+Fluxo principal(Visualizar avaliações) 
+
+	1) O usuário deve acessar a página das especificações de um produto.
+	2) O usuário deve clicar na aba de exibir avaliações
+	3) O sistema retornará uma página com as avaliações do respectivo produto.
+	
+Fluxo alternativo(1) - Erro ao exibir avaliações
+
+	3.1) O sistema não conseguiu carregar a página deavaliações do produto por conta de inconsistencias.
+	3.2) O sistema recarrega a página e tenta recarregar os dados sobre avaliações do produto.
+	3.3) O sistema retornará uma página com as avaliações do respectivo produto.

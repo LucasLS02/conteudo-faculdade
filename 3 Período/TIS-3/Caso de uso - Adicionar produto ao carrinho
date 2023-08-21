@@ -1,0 +1,31 @@
+Pré requisitos
+
+	Usuário deve ter uma conta registrada na plataforma. 
+	O sistema deve ter produtos cadastrados.
+
+Fluxo principal(Adicionar produtos ao carrinho)
+
+	1) O usuário deve visualizar um produto na plataforma.
+	2) O usuário deve escolher as especificações do produto e adicionar ao carrinho.
+	3) O sistema deve criar um registro especifico sobre o produto e as especificações daquele pedido.
+	4) O usuário deve visualizar uma tela/popUp com as informações dos produtos adicionados ao carrinho.
+	
+Fluxo alternativo(1) - Erro ao visualizar os produtos
+
+	1.1) O sistema retorna um erro pois não conseguiu listar produtos por causa de instabilidades no sistema.
+	1.2) O sistema informa ao usuário o erro ocorrido.
+	1.3) O sistema recarrega a página e tenta relistar os produtos.
+	
+Fluxo alternativo(2) - Erro ao adicionar produtos ao carrinho
+
+	2.1) O sistema retorna um erri pois não foi capaz de adicioanr um produto ao carrinho por instabilidade do sistema.
+	2.2) O sistema recarrega a página.
+	2.3) O sistema verifica se havia algum produto adicionado ao carrinho.
+	2.4) O sistema avisa ao usuário do erro ao inserir produto e pede para tentar novamente.
+	
+Fluxo alternativo(3) - Erro ao visualizar produtos adicionados ao carrinho
+
+	4.1) o usuário não consegue visualizar os produtos que foram inseridos no carrinho.
+	4.2) O usuário recarrega a página.
+	4.3) O sistema verifica se há registro de produtos adicionados ao carrinho.
+	4.4) O sistema carrega a siaulização dos produtos adicionados ao carrinho.

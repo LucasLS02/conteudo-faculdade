@@ -1,0 +1,17 @@
+
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(‰Ÿ¬Ûüÿÿÿÿ
+0
+java:S1220""Move this file to a named package.
+[
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ş¸™
+[
+java:S1124+"EReorder the modifiers to comply with the Java Language Specification.(®¬õ
+[
+java:S1124?"EReorder the modifiers to comply with the Java Language Specification.(é¨Ş
+1
+java:S3626U"Remove this redundant jump.(ûÁİ…
+`
+java:S1124S"EReorder the modifiers to comply with the Java Language Specification.(½´²¦ûÿÿÿÿ
+
+java:S1130b"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ÙØ¤Şıÿÿÿÿ8¥“ˆ‘³0
+N	java:S106e"9Replace this use of System.out or System.err by a logger.(ìÂà¡
